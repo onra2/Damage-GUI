@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            MaterialSkin.Controls.MaterialLabel materialLabel2;
+            MaterialSkin.Controls.MaterialLabel materialLabel3;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Damage = new System.Windows.Forms.TabPage();
@@ -38,6 +40,8 @@
             this.OnraIMG = new System.Windows.Forms.PictureBox();
             this.UCLink = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.Damage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -59,6 +63,8 @@
             // 
             // Damage
             // 
+            this.Damage.Controls.Add(materialLabel3);
+            this.Damage.Controls.Add(materialLabel2);
             this.Damage.Controls.Add(this.numericUpDown1);
             this.Damage.Controls.Add(this.DamageButton);
             this.Damage.Controls.Add(this.materialLabel1);
@@ -118,7 +124,7 @@
             this.About.Location = new System.Drawing.Point(4, 22);
             this.About.Name = "About";
             this.About.Padding = new System.Windows.Forms.Padding(3);
-            this.About.Size = new System.Drawing.Size(531, 226);
+            this.About.Size = new System.Drawing.Size(531, 214);
             this.About.TabIndex = 1;
             this.About.Text = "About";
             this.About.UseVisualStyleBackColor = true;
@@ -160,12 +166,38 @@
             this.materialTabSelector1.TabIndex = 1;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
+            // materialLabel2
+            // 
+            materialLabel2.AutoSize = true;
+            materialLabel2.Depth = 0;
+            materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            materialLabel2.Location = new System.Drawing.Point(6, 182);
+            materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            materialLabel2.Name = "materialLabel2";
+            materialLabel2.Size = new System.Drawing.Size(426, 19);
+            materialLabel2.TabIndex = 3;
+            materialLabel2.Text = "Higher values have a higher chance of making the game crash.";
+            // 
+            // materialLabel3
+            // 
+            materialLabel3.AutoSize = true;
+            materialLabel3.Depth = 0;
+            materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            materialLabel3.Location = new System.Drawing.Point(6, 200);
+            materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            materialLabel3.Name = "materialLabel3";
+            materialLabel3.Size = new System.Drawing.Size(302, 19);
+            materialLabel3.TabIndex = 4;
+            materialLabel3.Text = "It is recommended to set it around 10 to 15.";
+            // 
             // Main
             // 
             this.AcceptButton = this.DamageButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 326);
+            this.ClientSize = new System.Drawing.Size(537, 314);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
